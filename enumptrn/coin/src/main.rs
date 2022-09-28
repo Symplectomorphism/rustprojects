@@ -74,6 +74,19 @@ fn value_in_cents(coin: Coin) -> u8 {
     }
 }
 
+fn count_non_quarter(coin: Coin, mut count: u16) -> u16 {
+    // match coin {
+    //     Coin::Quarter(state) => println!("State quarter from {:?}", state),
+    //     _ => count += 1,
+    // }
+    if let Coin::Quarter(state) = coin {
+        println!("State quarter from {:?}!", state);
+    } else {
+        count += 1;
+    }
+    count
+}
+
 fn plus_one(x: Option<i32>) -> Option<i32> {
     match x {
         None => None,
@@ -102,4 +115,7 @@ fn main() {
         7 => remove_fancy_hat(),
         _ => reroll(),
     }
+
+    // println!("Number of non-quarter coins is {}.", count_non_quarter(Coin::Quarter(UsState::Texas), 12));
+    println!("Number of non-quarter coins is {}.", count_non_quarter(Coin::Dime, 12));
 }
