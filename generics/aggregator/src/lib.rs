@@ -56,6 +56,21 @@ impl Summary for Tweet {
     }
 }
 
-pub fn notify(item: &impl Summary) {
-    println!("Breaking news! {}", item.summarize());
+// pub fn notify(item: &impl Summary) {
+//     println!("Breaking news! {}", item.summarize());
+// }
+
+pub fn notify<T: Summary>(item: &T) {
+    println!("Breaking news! {},", item.summarize());
+}
+
+fn returns_summarizable() -> impl Summary {
+    Tweet {
+        username: String::from("horse_ebooks"),
+        content: String::from(
+            "of course, as you probably already know, people"
+        ),
+        reply: false,
+        retweet: false,
+    }
 }

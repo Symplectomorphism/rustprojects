@@ -1,4 +1,4 @@
-fn largest<T>(list: &[T]) -> &T {
+fn largest<T>(list: &[T]) -> &T where T: PartialOrd {
     let mut largest = &list[0];
 
     for item in list {
