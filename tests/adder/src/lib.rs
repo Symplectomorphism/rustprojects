@@ -35,6 +35,10 @@ pub fn add_two(a: i32) -> i32 {
     a + 2
 }
 
+fn internal_adder(a: i32, b: i32) -> i32 {
+    a + b
+}
+
 pub fn greeting(name: &str) -> String {
     format!("Hello {}!", name)
 //     format!("Hello!")
@@ -45,6 +49,7 @@ mod tests {
     use super::*;
 
     #[test]
+    #[ignore]
     fn exploration() {
         let result = add(2, 2);
         assert_eq!(result, 4);
@@ -112,5 +117,10 @@ mod tests {
         } else {
             Err(String::from("two plus two does not equal four"))
         }
+    }
+
+    #[test]
+    fn internal() {
+        assert_eq!(4, internal_adder(2, 2));
     }
 }
