@@ -1,3 +1,12 @@
+use std::slice;
+
+static HELLO_WORLD: &str = "Hello, world!";
+static mut COUNTER: u32 = 0;
+
+extern "C" {
+    fn abs(input: i32) -> i32;
+}
+
 fn main() {
     let mut num = 5;
 
@@ -24,6 +33,41 @@ fn main() {
 
     assert_eq!(a, &mut [1, 2, 3]);
     assert_eq!(b, &mut [4, 5, 6]);
+
+    let r = address as *mut i32;
+
+    let _values: &[i32] = unsafe { slice::from_raw_parts_mut(r, 10_000) };
+
+    unsafe {
+        println!("Absolute value of -3 according to C: {}", abs(-3));
+    }
+
+    println!("name is: {}", HELLO_WORLD);
+
+    add_to_count(3);
+    unsafe {
+        println!("COUNTER: {}", COUNTER);
+    }
 }
 
 unsafe fn dangerous () {}
+
+fn split_at_mut(values: &mut [i32], mid: usize) -> (&mut [i32], &mut [i32]) {
+    let len = values.len();
+    let ptr = values.as_mut_ptr();
+
+    assert!(mid <= len);
+
+    unsafe {
+        (
+            slice::from_raw_parts_mut(ptr, mid),
+            slice::from_raw_parts_mut(ptr.add(mid), len - mid),
+        )
+    }
+}
+
+fn add_to_count(inc: u32) {
+    unsafe {
+        COUNTER += inc;
+    }
+}
