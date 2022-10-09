@@ -6,3 +6,4 @@ Hitherto, I have gone through the main [Rust book](https://doc.rust-lang.org/sta
 Currently, I am going through the exercises in [rustlings](https://github.com/rust-lang/rustlings):
 
 
+Progress: You completed 33 / 94 exercises (35.11 %).
