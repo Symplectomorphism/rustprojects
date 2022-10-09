@@ -3,5 +3,5 @@
 # Learning Rust
 
 Hitherto, I have gone through the main [Rust book](https://doc.rust-lang.org/stable/book/title-page.html).  
-Currently, I am going through the exercises in [rustlings](https://github.com/rust-lang/rustlings).
+Currently, I am going through the exercises in [rustlings](https://github.com/rust-lang/rustlings): (35.11%).
 
