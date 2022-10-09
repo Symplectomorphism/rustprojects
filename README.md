@@ -4,6 +4,8 @@
 
 Hitherto, I have gone through the main [Rust book](https://doc.rust-lang.org/stable/book/title-page.html).  
 Currently, I am going through the exercises in [rustlings](https://github.com/rust-lang/rustlings).
+
+
 Name             	Path                                          	Status 
 intro1           	exercises/intro/intro1.rs                     	Done   
 intro2           	exercises/intro/intro2.rs                     	Done   
