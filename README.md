@@ -5,4 +5,4 @@
 Hitherto, I have gone through the main [Rust book](https://doc.rust-lang.org/stable/book/title-page.html).  
 Currently, I am going through the exercises in [rustlings](https://github.com/rust-lang/rustlings):
 
-Progress: You completed 43 / 94 exercises (45.74 %).
+Progress: You completed 47 / 94 exercises (50.00 %).
