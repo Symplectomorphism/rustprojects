@@ -6,3 +6,5 @@ Hitherto, I have gone through the main [Rust book](https://doc.rust-lang.org/sta
 Currently, I am going through the exercises in [rustlings](https://github.com/rust-lang/rustlings):
 
 Progress: You completed 51 / 94 exercises (54.26 %).
+
+![Work in progress](./rustlings.png "Neovim/tmux set up.")
