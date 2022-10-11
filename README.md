@@ -7,4 +7,4 @@ Currently, I am going through the exercises in [rustlings](https://github.com/ru
 
 ![Work in progress](./rustlings.png "Neovim/tmux set up.")
 
-Progress: You completed 72 / 94 exercises (76.60 %).
+Progress: You completed 75 / 94 exercises (79.79 %).
