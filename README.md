@@ -2,9 +2,6 @@
 
 # Learning Rust
 
-Hitherto, I have gone through the main [Rust book](https://doc.rust-lang.org/stable/book/title-page.html).  
-Currently, I am going through the exercises in [rustlings](https://github.com/rust-lang/rustlings):
+Hitherto, I have gone through the main [Rust book](https://doc.rust-lang.org/stable/book/title-page.html) and the rustling exercises in [rustlings](https://github.com/rust-lang/rustlings):
 
-![Work in progress](./rustlings.png "Neovim/tmux set up.")
-
-Progress: You completed 89 / 94 exercises (94.68 %).
+I will start to code up a full-fledged real-world project to keep the gradient!
