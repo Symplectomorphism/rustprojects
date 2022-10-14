@@ -7,3 +7,5 @@ Hitherto, I have gone through the main [Rust book](https://doc.rust-lang.org/sta
 ![Completed](./rustlings.png "Neovim/tmux set up.")
 
 Progress: You completed 94 / 94 exercises (100.00 %).
+
+I am currently slowly implementing the book "Programming Rust" by Blandy et al. 
